@@ -68,10 +68,10 @@ var specialCharacterscon = confirm("would you like your password to contain spac
     }
   }
 
+  if(lowerCasecon === false && upperCasecon === false && specialCharacterscon === false && numberscon === false){
+    alert("must click atleast one of the criteria");
+  } 
   
-if(lowerCasecon === false && upperCasecon === false && specialCharacterscon === false &&numeric === false){
-  alert("must click atleast one of the criteria");
-} 
 
  var passwords ="";
  for(var i = 0; i < passlength; i++){

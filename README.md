@@ -13,3 +13,5 @@ How I made the code. First I made five arrays. One array was for uppercase value
 
 ![alt text](assets/Animation.gif)
 
+click [here](https://alex-h1.github.io/password-generator/) to view deployed site
+
