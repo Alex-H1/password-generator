@@ -84,7 +84,6 @@ var specialCharacterscon = confirm("would you like your password to contain spac
   
   }
   console.log(passwords);
-  return passwords;
   
   
 }
