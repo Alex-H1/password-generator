@@ -88,4 +88,3 @@ if(lowerCasecon === false && upperCasecon === false && specialCharacterscon === 
   
   
 }
-    
