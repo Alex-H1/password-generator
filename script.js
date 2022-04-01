@@ -33,13 +33,8 @@ var concarrays = [];
 // value arrays 
 var upperCase="ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 var lowerCase="abcdefghijklmnopqrstuvwxyz".split("");
-var numbers="0123456789".split("");
 var specialCharacters= "+-*/|\]}[{]!@#$%^&()`~".split("");
-
-
-if(upperCasecon !== false && lowerCasecon !==false && numberscon !== false && specialCharacterscon !==false){
-  alert("must click atleast on of the criteria");
-} 
+var numeric ="1234567890".split("")
 
 
 // prompt for lowercases
@@ -61,8 +56,8 @@ var upperCasecon = confirm("would you like your password to contain upercases?")
 
 var numberscon = confirm("do you want your password to contain numeric?");
   if(numberscon === true){
-    for(var i=0; i<upperCase.length;i++){
-      concarrays.push(upperCase[i]);
+    for(var i=0; i<numeric.length;i++){
+      concarrays.push(numeric[i]);
       }
     } 
 
@@ -72,6 +67,11 @@ var specialCharacterscon = confirm("would you like your password to contain spac
       concarrays.push(specialCharacters[i]);
     }
   }
+
+  
+if(lowerCasecon === false && upperCasecon === false && specialCharacterscon === false &&numeric === false){
+  alert("must click atleast one of the criteria");
+} 
 
  var passwords ="";
  for(var i = 0; i < passlength; i++){
