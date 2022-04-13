@@ -1,5 +1,6 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+var passwordEl  = document.getElementById("password");
 // concated arrays
 
 
@@ -21,7 +22,6 @@ function generatePassword(){
   var length = prompt("how many characters would you like to include in your password","8-128");
   // makes string to numeric value
   var passlength=parseInt(length);
-  console.log(passlength);
   if(length < 8 || length > 128 || isNaN(length)){
     alert("password must contain atleast 8-128 characters");
     return;
@@ -83,7 +83,9 @@ var specialCharacterscon = confirm("would you like your password to contain spac
   ];
   
   }
-  console.log(passwords);
+  console.log(passwordEl);
   
+  passwordEl.textContent = passwords;
+
   
 }
