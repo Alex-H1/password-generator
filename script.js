@@ -61,7 +61,7 @@ var numberscon = confirm("do you want your password to contain numeric?");
       }
     } 
 
-var specialCharacterscon = confirm("would you like your password to contain spacial characters?");
+var specialCharacterscon = confirm("would you like your password to contain spacial characters?")
   if (specialCharacterscon === true){
     for(var i=0; i<specialCharacters.length;i++){
       concarrays.push(specialCharacters[i]);
@@ -83,9 +83,8 @@ var specialCharacterscon = confirm("would you like your password to contain spac
   ];
   
   }
-  console.log(passwordEl);
+  console.log(passwords);
   
-  passwordEl.textContent = passwords;
+  return passwords;
 
-  
 }
